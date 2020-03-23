@@ -6,4 +6,4 @@ command=./durham-library/durham-library
 interval=600
 ```
 
-Thank you @michaelrcrilly for the lovely API endpoint
+Thank you [@michaelrcrilly](https://github.com/michaelrcrilly) for the lovely API endpoint
