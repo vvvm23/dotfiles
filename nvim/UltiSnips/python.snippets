@@ -1,0 +1,89 @@
+snippet docs
+"""
+	File: ${1:`vim_snippets#Filename('$1.py', 'foo.py')`}
+	Author: Alex McKinney
+	Email: alexander.f.mckinney@durham.ac.uk
+	Github: vvvm23
+	Description: ${0}
+"""
+endsnippet
+
+snippet for "For loop" b
+for ${1:item} in ${2:iterator}:
+	${0:${VISUAL}}
+endsnippet
+
+snippet forn "For loop until N" b
+for i in range(${1:N}):
+	${2:${VISUAL}}
+endsnippet
+
+snippet if "If Statement" b
+if ${1:condition}:
+	${2:${VISUAL}}
+endsnippet
+
+snippet ifelse "If-Else Statement" b
+if ${1:condition}:
+	${2:pass}
+else:
+	${3:pass}
+endsnippet
+
+snippet el "Else Statement" b
+else:
+	${0:${VISUAL}}
+endsnippet
+
+snippet ei "Else if Statement" b
+elif ${1:condition}:
+	${0:${VISUAL}}
+endsnippet
+
+snippet while "While Statement" b
+while ${1:condition}:
+	${2:${VISUAL}}
+endsnippet
+
+snippet def "Function Declaration" b
+def ${1:name}(${2:`indent('.') ? 'self' : ''`}):
+	${0:${VISUAL}}
+endsnippet
+
+snippet defdoc "Function Declaration with Docs" b
+"""
+	-- ${1:Description} --
+
+	Inputs:
+		${2:var_name} - ${3:Description}
+	Outputs:
+		${4:var_name} - ${5:Description}
+
+"""
+def ${6:name}(${7:`indent('.') ? 'self' : ''`}):
+	${8:${VISUAL}}
+endsnippet
+
+snippet ret "Return Statement" b
+return ${0:${VISUAL}}
+endsnippet
+
+snippet try "Try-Except Statement" b
+try:
+	${1:${VISUAL}}
+except ${2:Exception} as ${3:e}:
+	${0:raise $3}
+endsnippet
+
+snippet main
+if __name__ == '__main__':
+	${0:main()}
+endsnippet
+
+snippet pr
+print("${0:${VISUAL}}")
+endsnippet
+
+snippet di
+${1:dictionary}['${2:key}']
+endsnippet

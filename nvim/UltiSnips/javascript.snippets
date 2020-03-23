@@ -1,0 +1,30 @@
+snippet fun "Function Declaration" b
+function ${1:function_name}(${2}) {
+	${0:${VISUAL}}
+}
+endsnippet
+
+snippet afun "Asynchronous Function Declaration" b
+async function ${1:function_name}(${2}) {
+	${0:${VISUAL}}
+}
+endsnippet
+
+snippet vfun "Variable Assigned Function" b
+let ${1:function_name} = function(${2}) {
+	${0:${VISUAL}}
+};
+endsnippet
+
+snippet for "for (...) {...}" b
+for (let ${1:i} = 0; $1 < ${2:Count}; $1++) {
+	${0:${VISUAL}}
+}
+endsnippet
+
+snippet while "While Loop" b
+while (${1:condition}) {
+	${0:${VISUAL}}
+}
+endsnippet
+

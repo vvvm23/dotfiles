@@ -1,0 +1,58 @@
+separator=true
+separator_block_width=15
+
+#[covid19-uk]
+#command=/home/alex/.config/i3blocks/covid19-tracker-i3blocks/covid19stats.py uk COV:
+#interval=repeat
+[deadlines]
+command=/home/alex/.config/i3blocks/deadlines/deadlines.py 5
+interval=persist
+
+#[covid19]
+#command=/home/alex/.config/i3blocks/covid19/covid19.py UK COV:
+#interval=5
+
+[library]
+command=printf "\uf624 CHAIRS: " && ./durham-library/durham-library
+interval=600
+
+[temperature]
+command=printf "\uf737 TEMP: " && ./temperature/temperature
+interval=30
+T_WARN=80
+T_CRIT=90
+
+[cpu_usage]
+command=printf "\ufb19 " && /home/alex/.config/i3blocks/cpu_usage/cpu_usage
+interval=1
+LABEL=CPU: 
+DECIMALS=1
+
+[gpu-usage]
+command=printf "\ufd3e " && ./gpu-load/gpu-load
+interval=5
+
+[memory]
+command=printf "\uf85a MEM: " && ./memory/memory
+interval=30
+
+[pacman]
+command=printf "\uf303 Updates: " && checkupdates | wc -l
+interval=600
+
+#[ethernet]
+#command=ip route get 1 | awk -F' ' 'NR==1{ print "LAN:", $3 }'
+#interval=1
+
+[iface]
+command=printf "\uf1eb LAN: " && ./iface/iface
+interval=5
+color=#00FF00
+
+[wifi]
+command=./wifi/wifi
+interval=5
+
+[date]
+command=printf "\uf64f " && date '+%T %d/%m/%Y'
+interval=1
