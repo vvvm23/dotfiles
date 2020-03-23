@@ -4,7 +4,7 @@ t_high=1800
 t_med=500
 t_low=250
 
-curl -s https://michael-crilly.com/projects/library/data/spaces/ > ~/.cache/durham-library
+#curl -s https://michael-crilly.com/projects/library/data/spaces/ > ~/.cache/durham-library
 #seats=$(cat ~/.cache/durham-library)
 seats=1800
 
