@@ -53,6 +53,15 @@ color=#00FF00
 #command=./wifi/wifi
 #interval=5
 
+#[battery]
+#command=/home/alex/.config/i3blocks/battery/battery
+#interval=30
+#LABEL=BAT
+[battery2]
+command=/home/alex/.config/i3blocks/battery2/battery2
+markup=pango
+interval=30
+
 [date]
 command=printf "\uf64f " && date '+%T %d/%m/%Y'
 interval=1
