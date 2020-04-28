@@ -1,4 +1,4 @@
-call plug#begin('~/nvim/plugged')
+call plug#begin('~/.config/nvim/plugged')
 Plug 'junegunn/seoul256.vim'
 Plug 'sirver/ultisnips'
 Plug 'honza/vim-snippets'
@@ -68,7 +68,7 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 let g:tex_flavor='latex'
 let g:vimtex_view_method='zathura'
 let g:vimtex_quickfix_mode=0
-set conceallevel=1
+set conceallevel=0
 let g:tex_conceal='abdmg'
 let g:vimtex_imaps_leader='`'
 if !exists('g:ycm_semantic_triggers')
@@ -110,6 +110,12 @@ nnoremap <C-Right> <C-W><Right>
 nnoremap <C-Up> <C-W><Up>
 nnoremap <C-Down> <C-W><Down>
 
+" Map Goyo
+map <C-g> :Goyo<CR>
+
 " Limelight
 let g:limelight_conceal_ctermfg = 'gray'
 let g:limelight_conceal_guifg = 'DarkGray'
+
+" set to system clipboard
+set clipboard=unnamedplus
