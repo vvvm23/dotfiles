@@ -54,7 +54,7 @@ bindsym $mod+c exec brave
 bindsym $mod+Shift+Return exec kitty -e ranger
 
 # take screenshot
-# bindsym $mod+s exec shutter
+exec --no-startup-id flameshot
 bindsym $mod+s exec flameshot gui
 
 # kill focused window
