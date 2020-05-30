@@ -119,3 +119,14 @@ let g:limelight_conceal_guifg = 'DarkGray'
 
 " set to system clipboard
 set clipboard=unnamedplus
+"map <C-c> :"+y
+
+" fix last spelling error
+imap <c-l> <c-g>u<Esc>[s1z=`]a<c-g>u
+
+" disable hlsearch
+set nohlsearch
+
+" map find and replace
+" overwrites replace line?
+nmap S :%s/
