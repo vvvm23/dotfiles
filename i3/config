@@ -41,13 +41,14 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec kitty
+#bindsym $mod+Return exec kitty
+bindsym $mod+Return exec st
 
 # start browser
 bindsym $mod+c exec brave
 
 # start ranger
-bindsym $mod+Shift+Return exec kitty -e ranger
+bindsym $mod+Shift+Return exec st -e ranger
 
 # take screenshot
 # bindsym $mod+s exec shutter
@@ -115,17 +116,6 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-#set $ws1 "1"
-#set $ws2 "2"
-#set $ws3 "3"
-#set $ws4 "4"
-#set $ws5 "5"
-#set $ws6 "6"
-#set $ws7 "7"
-#set $ws8 "8"
-#set $ws9 "9"
-#set $ws10 "10"
-
 #一二三四五六七八九十
 set $ws1 "1:一"
 set $ws2 "2:二"
@@ -202,6 +192,7 @@ bindsym $mod+r mode "resize"
 exec feh --bg-scale /home/alex/.config/background.jpg
 
 # Start i3bar to display a workspace bar (plus the system information i3status
+#exec_always --no-startup-id ~/.config/polybar/startup.sh
 # finds out, if available)
 bar {
         status_command i3blocks
@@ -210,7 +201,7 @@ bar {
 }
 
 # start picom
-exec --no-startup-id picom -b
+exec picom -b
 
 # start redshift
 exec --no-startup-id redshift
@@ -234,3 +225,10 @@ client.focused          #d9d9d9 #cecece #000000 #d9d9d9 #d9d9d9
 
 # stop focus on mouse
 focus_follows_mouse no
+
+# scratchpad
+bindsym $mod+Shift+BackSpace move scratchpad
+bindsym $mod+BackSpace scratchpad show
+
+# smart borders
+smart_borders on

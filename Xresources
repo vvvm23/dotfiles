@@ -1,0 +1,43 @@
+! special
+*.font: Meslo LG L:pixelsize=16:antialias=true:autohint=true;
+*.alpha: 0.85
+!*.foreground:   #fbe5e5
+*.foreground:   #dddddd
+!*.background:   #291d2d
+*.background:   #000000
+*.cursorColor:  #fbe5e5
+
+! black
+*.color0:       #757474
+*.color8:       #4d4d4d
+
+! red
+*.color1:       #ea8532
+*.color9:       #c30000
+
+! green
+*.color2:       #f99d53
+*.color10:      #23fd00
+
+! yellow
+*.color3:       #ce5d00
+*.color11:      #d0ce0b
+
+! blue
+*.color4:       #377789
+*.color12:      #ec2323
+
+! magenta
+*.color5:       #ec2323
+*.color13:      #fd28ff
+
+! cyan
+*.color6:       #0dcdcd
+*.color14:      #14ffff
+
+! white
+*.color7:       #e5e5e5
+*.color15:      #ffffff
+
+urxvt*transparent: true
+urxvt*shading: 25
