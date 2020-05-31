@@ -130,3 +130,7 @@ set nohlsearch
 " map find and replace
 " overwrites replace line?
 nmap S :%s/
+
+" autofold
+set foldmethod=syntax
+set nofoldenable
