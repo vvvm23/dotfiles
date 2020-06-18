@@ -1,0 +1,4 @@
+{
+    "python.jediEnabled": false,
+    "python.setInterpreter": "/usr/bin/python"
+}
