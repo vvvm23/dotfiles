@@ -12,6 +12,7 @@ Plug 'junegunn/goyo.vim'
 Plug 'lervag/vimtex'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'danilamihailov/beacon.nvim'
+Plug 'psliwka/vim-smoothie'
 call plug#end()
 
 " Enable 24 bit colors
