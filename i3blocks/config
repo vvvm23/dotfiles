@@ -34,11 +34,11 @@ interval=5
 
 [memory]
 command=printf "\uf85a MEM: " && ./memory/memory
-interval=30
+interval=1
 
 [pacman]
 command=printf "\uf303 Updates: " && checkupdates | wc -l
-interval=600
+interval=10
 
 #[ethernet]
 #command=ip route get 1 | awk -F' ' 'NR==1{ print "LAN:", $3 }'
