@@ -13,6 +13,7 @@ Plug 'lervag/vimtex'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'danilamihailov/beacon.nvim'
 Plug 'psliwka/vim-smoothie'
+Plug 'rlue/vim-barbaric'
 call plug#end()
 
 " Enable 24 bit colors
@@ -126,3 +127,8 @@ nmap <silent> gr <Plug>(coc-references)
 
 " beacon settings
 let g:beacon_minimal_jump = 10
+
+" barbaric settings
+let g:barbaric_ime = 'fcitx'
+
+
